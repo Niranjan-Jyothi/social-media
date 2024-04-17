@@ -7,9 +7,9 @@ const renderSideBar = (children) => {
   return (
     <Flex flexDir="row">
       {/* sidebar on the left */}
-      {/* <Box w={{ base: "70px", md: "240px" }}>
+      <Box w={{ base: "70px", md: "240px" }}>
         <Sidebar />
-      </Box> */}
+      </Box>
 
       {/* the page content on the right */}
       <Box

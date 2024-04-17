@@ -1,6 +1,7 @@
 import { Box, Link, Flex, Image } from "@chakra-ui/react";
 import React from "react";
 import { Link as RouterLink } from "react-router-dom";
+import { FaSearch } from "react-icons/fa";
 
 const Footer = () => {
   return (
@@ -27,7 +28,7 @@ const Footer = () => {
 
         <Link
           display={"flex"}
-          to={"/"}
+          to={"/search"}
           as={RouterLink}
           alignItems={"center"}
           gap={4}
@@ -36,7 +37,8 @@ const Footer = () => {
           w={{ base: 10, md: "full" }}
           justifyContent={{ base: "center", md: "flex-start" }}
         >
-          <Image src="src/assets/Message.png" />
+          {/* <Image src="src/assets/Message.png" /> */}
+          <FaSearch />
         </Link>
 
         <Link
@@ -69,7 +71,7 @@ const Footer = () => {
 
         <Link
           display={"flex"}
-          to={"/johndoe"}
+          to={"/johndoe"} //maybe take from userprofilestore: username
           as={RouterLink}
           alignItems={"center"}
           gap={4}

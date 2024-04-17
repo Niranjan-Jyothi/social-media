@@ -24,7 +24,7 @@ const ProfilePost = ({ post }) => {
           bottom={0}
           bg={"blackAlpha.700"}
           transition={"all 0.3s ease"}
-          zIndex={1}
+          // zIndex={1}
           justifyContent={"center"}
         >
           <Flex alignItems={"center"} justifyContent={"center"} gap={50}>

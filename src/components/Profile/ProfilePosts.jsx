@@ -5,14 +5,13 @@ import ProfilePost from "./ProfilePost";
 
 const ProfilePosts = () => {
   const { isLoading, posts } = useGetUserPosts();
-  //const isLoading = true;
   const noPostsFound = !isLoading && posts.length === 0;
   if (noPostsFound) return <NoPostsFound />;
 
   return (
     <Grid
       templateColumns={{
-        sm: "repeat(2, 1fr)",
+        base: "repeat(2, 1fr)",
         md: "repeat(3, 1fr)",
       }}
       gap={1}
